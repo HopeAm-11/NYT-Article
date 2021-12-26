@@ -1,0 +1,212 @@
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css");
+
+/* Box sizing rules */
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+/* Remove default margin */
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+figure,
+blockquote,
+dl,
+dd {
+    margin: 0;
+}
+
+/* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
+ul[role='list'],
+ol[role='list'] {
+    list-style: none;
+}
+
+/* Set core root defaults */
+html:focus-within {
+    scroll-behavior: smooth;
+}
+
+/* Set core body defaults */
+body {
+    min-height: 100vh;
+    text-rendering: optimizeSpeed;
+    line-height: 1.5;
+}
+
+/* A elements that don't have a class get default styles */
+a:not([class]) {
+    text-decoration-skip-ink: auto;
+}
+
+/* Make images easier to work with */
+img,
+picture {
+    max-width: 100%;
+    display: block;
+}
+
+/* Inherit fonts for inputs and buttons */
+input,
+button,
+textarea,
+select {
+    font: inherit;
+}
+
+/* Remove all animations, transitions and smooth scroll for people that prefer not to see them */
+@media (prefers-reduced-motion: reduce) {
+    html:focus-within {
+        scroll-behavior: auto;
+    }
+
+    *,
+    *::before,
+    *::after {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+        scroll-behavior: auto !important;
+    }
+}
+
+a {
+    text-decoration: none;
+    color: var(--black);
+
+    /* no underline */
+}
+
+/*end reset*/
+:root {
+    --border-gray: #e2e2e2;
+    --black: #000;
+    font-size: 16px;
+    --fade-gray: #666;
+}
+
+/*layout*/
+.flex-b {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.flex-e {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.flex-a {
+    display: flex;
+    justify-content: space-around;
+}
+
+/*body*/
+
+body {
+    border: 1px solid red;
+}
+
+/*header*/
+.primary-header img {
+    width: 14.063rem;
+}
+
+.primary-header {
+    grid-column: 2/3;
+}
+
+.primary-header div:first-child {
+    width: 15rem;
+
+}
+
+.primary-header a:hover {
+    text-decoration: underline;
+    color: var(--black);
+}
+
+.primary-header button {
+    color: rgb(255, 255, 255);
+    padding: 5px 10px 5px;
+    background-color: rgb(86, 123, 149);
+    border-color: rgb(86, 123, 149);
+    border-width: 1px;
+    border-radius: 3px;
+    font-size: 0.8125em;
+}
+
+.primary-header a {
+    font-size: 14.25px;
+    font-family: nyt-franklin, helvetica, arial, sans-serif;
+    font-weight: 700;
+    text-transform: uppercase;
+    -webkit-letter-spacing: 0.7px;
+    -moz-letter-spacing: 0.7px;
+    -ms-letter-spacing: 0.7px;
+    letter-spacing: 0.7px;
+    line-height: 19px;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: 10rem 1fr 10rem;
+    grid-template-rows: 3.313rem;
+    border: 1px solid var(--border-gray)
+}
+
+/*main*/
+.main-grid {
+    display: grid;
+    border: 1px solid rgb(4, 82, 134);
+    grid-template-columns: 30rem 1fr 30rem;
+}
+
+.main-header {
+    grid-column: 2/3;
+}
+
+.img-alan {
+    grid-column: 2/3;
+    width: 100%;
+}
+
+.main-h {
+    display: grid;
+    grid-template-columns: 10rem 1fr 10rem;
+    height: 8rem;
+}
+
+p {
+    grid-column: 1/3;
+    grid-row: 4;
+
+}
+
+
+.main-h h1 {
+
+    grid-column: 2/3;
+    border-bottom: 1px solid var(--border-gray);
+    padding: 0 0 10px 0;
+
+}
+
+.main-h div {
+    grid-column: 2/3;
+    border: 1px solid red;
+    width: 10rem;
+
+}
+
+figcaption {
+    color: var(--fade-gray);
+    font-size: 15px;
+    word-wrap: break-word;
+}
