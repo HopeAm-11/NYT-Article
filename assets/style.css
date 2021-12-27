@@ -341,3 +341,33 @@ article section {
     background-color: var(--black);
     color: #fff;
 }
+
+p,
+h3 {
+    width: 100%;
+}
+
+.main-footer {
+    grid-column: 2/3;
+    flex-direction: column;
+
+}
+
+.main-footer div {
+    border: 1px solid orange;
+
+}
+
+.main-footer button {
+    font-family: 'Libre Franklin', Arial, Helvetica, sans-serif;
+    font-size: 13px;
+    width: 314px;
+    padding: .5rem 0;
+    background-color: rgb(86, 123, 149);
+    border: 1px solid rgb(50, 104, 145);
+    border-radius: 3px;
+    outline: none;
+    color: #fff;
+}
+
+.main-footer
