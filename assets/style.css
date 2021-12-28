@@ -350,12 +350,14 @@ h3 {
 .main-footer {
     grid-column: 2/3;
     flex-direction: column;
+    width: 600px;
 
 }
 
-.main-footer div {
-    border: 1px solid orange;
-
+.foot-sec {
+    border: 1px solid pink;
+    width: 100%;
+    margin-top: 10px;
 }
 
 .main-footer button {
@@ -370,4 +372,12 @@ h3 {
     color: #fff;
 }
 
-.main-footer
+.main-footer p {
+    font-size: 0.66em;
+}
+
+.foot-icon {
+    border: 1px solid red;
+    width: 30%;
+
+}
