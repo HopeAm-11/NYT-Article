@@ -82,6 +82,14 @@ a {
     /* no underline */
 }
 
+ul,
+li {
+    list-style-type: none;
+    padding: 0;
+
+}
+
+
 /*end reset*/
 :root {
     --border-gray: #e2e2e2;
@@ -109,9 +117,7 @@ a {
 
 /*body*/
 
-body {
-    border: 1px solid red;
-}
+body {}
 
 /*header*/
 .primary-header img {
@@ -209,7 +215,7 @@ body {
 }
 
 .main-h div {
-    border: 1px solid red;
+    border: 1px solid rgb(59, 48, 48);
     width: 160px;
 
 }
@@ -281,7 +287,6 @@ article section {
     height: 50rem;
     grid-column: span 2;
     grid-template-columns: repeat(4, 1fr);
-
     grid-template-rows: 1fr 1fr 100px;
     font-size: 0.9em;
     width: 100%;
@@ -377,7 +382,40 @@ h3 {
 }
 
 .foot-icon {
-    border: 1px solid red;
+    border: 1px solid rgb(82, 33, 33);
     width: 30%;
 
+}
+
+/*primary footer*/
+.primary-foot {
+    display: grid;
+    grid-template-columns: 50px 1fr 50px;
+    grid-auto-rows: 70px;
+    margin-top: 20px;
+}
+
+.primary-foot>* {
+    grid-column: 2/3;
+}
+
+.foot-line {
+    background-color: #fff;
+    border-bottom: 1px solid #e2e2e2;
+    border-top: 2px solid #e2e2e2;
+    content: '';
+    display: block;
+    height: 4.5px;
+    margin-top: 0;
+    margin-bottom: 10px;
+}
+
+.logo {
+    width: 14.063rem;
+    grid-row: 1/2;
+}
+
+.foot-sec-links {
+    display: grid;
+    grid-template-columns: repeat(5, 10rem);
 }
