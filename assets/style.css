@@ -37,6 +37,8 @@ body {
     min-height: 100vh;
     text-rendering: optimizeSpeed;
     line-height: 1.5;
+    font-family: georgia, 'times new roman', times, serif;
+
 }
 
 /* A elements that don't have a class get default styles */
@@ -118,6 +120,10 @@ li {
 
 }
 
+body {
+    font-size: 20px;
+}
+
 /*header*/
 .primary-header img {
     width: 14.063rem;
@@ -158,7 +164,7 @@ li {
 
 .primary-header a {
     font-size: 14.25px;
-    font-family: nyt-franklin, helvetica, arial, sans-serif;
+    font-family: 'helvetica', arial, sans-serif;
     font-weight: 700;
     text-transform: uppercase;
     -webkit-letter-spacing: 0.7px;
@@ -168,67 +174,76 @@ li {
     line-height: 19px;
 }
 
-/*
-.grid {
-    display: grid;
-    grid-template-columns: 160px 1fr 160px;
-    grid-template-rows: 53.008px;
-    border: 1px solid var(--border-gray)
-}
-*/
 
 /*main*/
-.main-grid {
+main {
     display: grid;
     grid-template-columns: 480px 1fr 480px;
     justify-items: center;
-    justify-content: center;
 }
 
-.main-header {
+.sec-head-container {
+    display: flex;
+    justify-content: center;
+
+}
+
+.secondary-header {
+    width: 900px;
     flex-direction: column;
-    grid-column: 2/3;
-    justify-content: center;
-    align-items: center;
-}
-
-.img-alan {
-    width: 100%;
+    height: 800px;
 
 }
 
-.main-h {
-    height: 112px;
+h1 {
+    font-family: georgia, 'times new roman', times, serif;
+    font-size: 40px;
+    font-weight: 500;
+    line-height: 1.2;
+    width: 600px;
+    border-bottom: 1px solid var(--border-gray);
+    padding-bottom: 10px;
+}
+
+.author {
+    font-size: 13px;
+}
+
+.section-header {
     flex-direction: column;
     align-items: flex-start;
-
 }
 
-.test {
-    height: 160px;
+.section-header div {
+    width: 25%;
+    padding-top: 10px;
+}
+
+.secondary-header div:first-child {
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
-
-
-
-.main-h h1 {
-    border-bottom: 1px solid var(--border-gray);
-    padding: 0 0 10px 0;
-
-}
-
-.main-h div {
-    width: 160px;
-
-}
-
 figcaption {
     color: var(--fade-gray);
     font-size: 15px;
-    word-wrap: break-word;
+}
+
+/*main*/
+
+.main-author p:first-child {
+    font-weight: bold;
+    font-size: 14px;
+}
+
+.main-author p:last-child {
+    font-size: 12px;
+    margin-top: 10px;
+}
+
+.main-author a:hover {
+    text-decoration: underline;
 }
 
 article {
@@ -236,8 +251,6 @@ article {
     width: 600px;
     flex-direction: column;
     justify-content: space-between;
-
-
 }
 
 article section {
