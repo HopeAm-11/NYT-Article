@@ -142,6 +142,11 @@ body {
     border-bottom: 1px solid var(--border-gray);
     height: 50px;
     padding: 0 20px 0 20px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: white;
 }
 
 .primary-header div:first-child {
@@ -202,7 +207,8 @@ main {
 .secondary-header {
     width: 900px;
     flex-direction: column;
-    height: 800px;
+    height: 50rem;
+    margin-top: 5rem;
 
 }
 
