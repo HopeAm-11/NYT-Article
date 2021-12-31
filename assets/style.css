@@ -37,7 +37,8 @@ body {
     min-height: 100vh;
     text-rendering: optimizeSpeed;
     line-height: 1.5;
-    font-family: georgia, 'times new roman', times, serif;
+    font-family: Georgia, Times, serif times, 'serif';
+    color: #121212;
 
 }
 
@@ -91,6 +92,9 @@ li {
 
 }
 
+button {
+    cursor: pointer;
+}
 
 /*end reset*/
 :root {
@@ -121,7 +125,7 @@ li {
 }
 
 body {
-    font-size: 20px;
+    font-size: 16px;
 }
 
 /*header*/
@@ -150,6 +154,10 @@ body {
     color: var(--black);
 }
 
+button {
+    text-transform: capitalize;
+}
+
 .primary-header button {
     color: rgb(255, 255, 255);
     padding: 5px 10px 5px;
@@ -158,8 +166,11 @@ body {
     border-width: 1px;
     border-radius: 3px;
     font-size: 0.8125em;
-    text-transform: capitalize;
 
+}
+
+.primary-header button:hover {
+    background-color: rgb(50, 104, 145);
 }
 
 .primary-header a {
@@ -267,6 +278,7 @@ article section {
 }
 
 .ads-container {
+    font-size: 12px;
     grid-column: span 3;
     height: 15rem;
     width: 100%;
@@ -287,6 +299,29 @@ article section {
 
 }
 
+.ads {
+    font-weight: bold;
+    font-size: 13px;
+    text-align: center;
+}
+
+.ads a {
+    color: #326891;
+}
+
+.link-blue {
+    color: #326891;
+}
+
+.link-blue:hover {
+    text-decoration: underline;
+}
+
+.small-font {
+    color: var(--fade-gray);
+    font-size: 14px;
+}
+
 .art4 h2 {
     width: 100%;
     font-size: 1em;
@@ -298,6 +333,11 @@ article section {
     align-items: center;
     justify-items: center;
     width: 60%;
+}
+
+.gray {
+    color: var(--fade-gray);
+    font-size: 12px;
 }
 
 .art5-grid {
@@ -325,6 +365,13 @@ article section {
     align-items: center;
 }
 
+.art5-grid span {
+    font-weight: bold;
+    font-size: 12px;
+}
+
+
+
 .art5 div {
     grid-column: span 2;
     grid-row: 3/4;
@@ -338,28 +385,33 @@ article section {
     background-color: #000;
 }
 
-.div-cook {
+.div-signup {
     grid-column: 2/3;
     border-top: 1px solid var(--border-gray);
     width: 600px;
     padding-top: 10px;
-}
-
-.div-cook p {
     font-size: 13px;
+
 }
 
-.div-cook button {
+.div-signup span {
+    font-weight: bold;
+}
+
+.div-signup p {
+    font-style: italic;
+}
+
+.div-signup button {
     border-radius: 2px;
     width: 100px;
     height: 36px;
     font-weight: bold;
-    font-size: 13px;
     background-color: #fff;
     cursor: pointer;
 }
 
-.div-cook button:hover {
+.div-signup button:hover {
     background-color: var(--black);
     color: #fff;
 }
@@ -393,12 +445,15 @@ h3 {
     color: #fff;
 }
 
+.main-footer button:hover {
+    background-color: rgb(50, 104, 145);
+}
+
 .main-footer p {
     font-size: 0.66em;
 }
 
 .foot-icon {
-    border: 1px solid rgb(82, 33, 33);
     width: 30%;
 
 }
